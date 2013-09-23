@@ -1,5 +1,3 @@
 #!/bin/bash
 
-ln -fs $OPENSHIFT_DATA_DIR/wp-content $OPENSHIFT_REPO_DIR/php/wp-content
-
-
+ln -fs ${OPENSHIFT_DATA_DIR%?}/wp-content ${OPENSHIFT_REPO_DIR%?}/php/wp-content
