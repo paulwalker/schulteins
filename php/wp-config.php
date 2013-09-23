@@ -2,6 +2,8 @@
 // $services = getenv("VCAP_SERVICES");
 // $services_json = json_decode($services,true);
 // $mysql_config = $services_json["mysql-5.1"][0]["credentials"];
+define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST')
+define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'])
 
 // ** MySQL settings from resource descriptor ** //
 define('DB_NAME', 'schulteinsurance');
